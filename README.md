@@ -1,13 +1,13 @@
-# 🎯 AEDC Customer Segmentation — SQL & RFM Analysis
+# AEDC Customer Segmentation — SQL & RFM Analysis
 
 **Portfolio Project 3** — SQL-powered customer segmentation using RFM Analysis on real electricity distribution data from the **Abuja Electricity Distribution Company (AEDC)** ADO Area Office.
 
 > Built by **Opemipo Daniel Owolabi** — Data Analyst | Python · SQL · Power BI · Tableau  
-> 📍 Faro, Portugal | 📧 opemipoowolabi001@gmail.com
+> Faro, Portugal | opemipoowolabi001@gmail.com
 
 ---
 
-## 🧩 Business Problem
+## Business Problem
 
 AEDC has hundreds of customer book codes (zones) across multiple service centres. Without proper segmentation, marketers waste time treating all customers the same — chasing reliable payers while ignoring recoverable ones.
 
@@ -19,13 +19,13 @@ This project uses **SQL + RFM Analysis** to answer:
 
 ---
 
-## 📊 Dashboard Preview
+## Dashboard Preview
 
 ![Customer Segmentation Dashboard](customer_segmentation_dashboard.png)
 
 ---
 
-## 🤖 What is RFM Analysis?
+## What is RFM Analysis?
 
 RFM is one of the most widely used customer segmentation techniques in business analytics:
 
@@ -39,15 +39,15 @@ Combined RFM score determines the customer segment:
 
 | Segment | Score | Description | Action |
 |---------|-------|-------------|--------|
-| 🏆 **Champion** | 8-9 | Pays often, pays a lot, paid recently | Protect & reward |
-| 💙 **Loyal** | 6-7 | Consistent payers, good value | Prioritise service |
-| 🌱 **Promising** | 5 | New or growing, showing good signs | Increase visits |
-| ⚠️ **At Risk** | 4 | Used to pay well, dropping off | Urgent outreach |
-| 💀 **Lost** | 3 | Inactive, minimal payment history | Recovery campaign |
+| Champion | 8-9 | Pays often, pays a lot, paid recently | Protect and reward |
+| Loyal | 6-7 | Consistent payers, good value | Prioritise service |
+| Promising | 5 | New or growing, showing good signs | Increase visits |
+| At Risk | 4 | Used to pay well, dropping off | Urgent outreach |
+| Lost | 3 | Inactive, minimal payment history | Recovery campaign |
 
 ---
 
-## 🗄️ Database Structure (SQL)
+## Database Structure (SQL)
 
 ```sql
 -- Customers table
@@ -73,7 +73,7 @@ CREATE TABLE transactions (
 
 ---
 
-## 🔍 Key SQL Queries
+## Key SQL Queries
 
 ### Query 1 — Revenue Summary per Book Code
 ```sql
@@ -115,16 +115,16 @@ FROM rfm_base
 
 ---
 
-## 📈 Results Summary
+## Results Summary
 
 | Segment | Book Codes | Total Revenue | Avg per Zone |
 |---------|-----------|---------------|--------------|
-| 🏆 Champion | 17 | ₦27.41M | ₦1,612,625 |
-| 💙 Loyal | 2 | ₦0.84M | ₦419,000 |
+| Champion | 17 | N27.41M | N1,612,625 |
+| Loyal | 2 | N0.84M | N419,000 |
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 ```bash
 # Clone the repo
@@ -136,38 +136,38 @@ pip install pandas matplotlib seaborn
 
 # Run the analysis
 python customer_segmentation.py
+
 ```
 
 ---
 
-## 🛠️ Tools & Technologies
+## Tools and Technologies
 
 | Tool | Purpose |
 |------|---------|
-| **SQL (SQLite)** | Database creation, RFM queries, aggregations |
-| **Python 3** | Script orchestration |
-| **Pandas** | Reading SQL query results |
-| **Matplotlib / Seaborn** | Dashboard visualisations |
+| SQL (SQLite) | Database creation, RFM queries, aggregations |
+| Python 3 | Script orchestration |
+| Pandas | Reading SQL query results |
+| Matplotlib / Seaborn | Dashboard visualisations |
 
 ---
 
-## 💡 Skills Demonstrated
+## Skills Demonstrated
 
-- **SQL database design** — creating tables, foreign keys, relationships
-- **Advanced SQL** — CTEs (WITH clauses), CASE statements, JOINs, aggregations
-- **RFM Analysis** — industry-standard customer segmentation technique
-- **Business thinking** — translating segments into actionable recommendations
-- **Data visualisation** — 4-panel dashboard telling a complete story
+- SQL database design — creating tables, foreign keys, relationships
+- Advanced SQL — CTEs (WITH clauses), CASE statements, JOINs, aggregations
+- RFM Analysis — industry-standard customer segmentation technique
+- Business thinking — translating segments into actionable recommendations
+- Data visualisation — 4-panel dashboard telling a complete story
 
 ---
 
-## 🔗 Other Projects
+## Other Projects
 
 | Project | Description |
 |---------|-------------|
 | [AEDC Marketer Performance Analysis](https://github.com/opemipo-analytics/AEDC-MARKETERS-ANALYTICS) | Python analysis of electricity marketer KPIs |
 | [AEDC Revenue Forecasting ML](https://github.com/opemipo-analytics/aedc-revenue-forecasting) | Machine Learning revenue forecast (99.8% accuracy) |
-| Power BI Revenue Dashboard *(coming soon)* | Interactive BI dashboard |
 
 ---
 
